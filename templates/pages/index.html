@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+ {% load static%}
+{% block content %}
+
+<!-- products -->
+  <!-- log in -->
+  <div class="login">
+
+    <form>
+    <input class="login-email" type="text" placeholder="email"></input>
+    <input class="login-password" type="password" placeholder="password"></input>
+    </form>
+
+    <p class="forgot-password"></p>
+    <button class="btn-auth"  >Log In</button>
+    <button class="btn-auth"  >Sign Up</button>
+
+    <!-- <p> <a href="#">Forgot password?</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Don't have an account?  <a href="#"> Sign up!</a></p> -->
+
+</div>
+<!-- log in end -->
+
+<hr class="horz">
+
+      <!-- products -->
+      <div class="product-box">
+
+        {% if Designs %}
+            {% for design in Designs %}
+               
+                    <div class="product">
+                      <a href="{% url 'item' design.id %}">
+                        <img
+                        src="{{ design.photo_main.url }}"
+                        class="product-img" alt="...">
+                        
+                        <div class="title">
+                          <p> {{design.client}} </p>
+                        </div>
+                      </a>
+                    </div>
+                
+            {% endfor %}
+
+        {% else %}
+                <h1>No Design Available</h1>
+        {% endif %}     
+      </div>
+
+      <div class="pagination">
+          {% if Designs.has_other_pages %}
+              <ul class="pagination">
+                  {% if Designs.has_previous %}
+                      <li class="page-item">
+                        <a href="?page={{ Designs.previous_page_number  }}" class="page-link">
+                            &laquo;
+                        </a>
+                      </li>
+                  {% else %}
+                      <li class="page-item disabled">
+                        <a class="page-link"> &laquo;</a>
+                      </li>
+
+                  {% endif %}
+                  {% for i in Designs.paginator.page_range %}
+                      {% if Designs.number == i %}
+                        <li class="page-item active">
+                          <a class="page-link">{{i}}</a>
+                        </li>
+                      {% else %}
+                        <li class="page-item">
+                          <a href="?page={{i}}" class="page-link">{{i}}</a>
+                        </li>
+                      {% endif %}
+                  {% endfor %}
+                  {% if Designs.has_next %}
+                      <li class="page-item">
+                        <a href="?page={{ Designs.next_page_number  }}" class="page-link">
+                            &raquo;
+                        </a>
+                      </li>
+                  {% else %}
+                      <li class="page-item disabled">
+                        <a class="page-link"> &raquo;;</a>
+                      </li>
+
+                  {% endif %}
+              </ul>
+
+          {% endif %}
+      </div>
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+
+    <div class="item-header">
+        <p class="item-title">{{item.client}} /</p>
+        <p class="item-designer">By <a href="#"> {{item.designer}} </a>/ {{ item.item }} </p>
+    </div>
+
+    <hr class="item-hr">
+
+    
+
+
+    <div class="item-container">
+        <div class="item-main">
+            <a href="{{ item.photo_main.url }}">
+                <img src="{{ item.photo_main.url }}" alt="" class="main">
+            </a>
+        </div>
+        
+        <div class="item-extra-detail">
+            <p><b>client:</b> {{ item.client}} <br>
+            <b>Designer: </b> {{ item.designer}} <br>
+            <b>description:</b> {{ item.description }} </p>
+        </div>
+        
+    </div>
+
+    <div class="item-extra-img">
+        {% if item.photo_1 %}
+        <div class="extra-img-container">
+            <a href="{{ item.photo_1.url }}">
+              <img src="{{ item.photo_1.url }}" alt="" class="extra-img">
+            </a>
+        </div>     
+              
+        {% endif %}
+        {% if item.photo_2 %}
+        <div class="extra-img-container">
+            <a href="{{ item.photo_2.url }}">
+              <img src="{{ item.photo_2.url }}" alt="" class="extra-img">
+            </a>
+        </div>     
+              
+        {% endif %}
+        {% if item.photo_3 %}
+        <div class="extra-img-container">
+            <a href="{{ item.photo_3.url }}">
+              <img src="{{ item.photo_3.url }}" alt="" class="extra-img">
+            </a>
+        </div>     
+              
+        {% endif %}
+        {% if item.photo_4 %}
+        <div class="extra-img-container">
+            <a href="{{ item.photo_4.url }}">
+              <img src="{{ item.photo_4.url }}" alt="" class="extra-img">
+            </a>
+        </div>     
+              
+        {% endif %}
+      </div>
+
+
+{% endblock %}
