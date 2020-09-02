@@ -100,7 +100,7 @@ body{
 	border-color: #6e6e6e;
 	font-size: 15px;
 	text-decoration: none;
-	width: 75%;
+	width: 100%;
 	padding: 10px;
 }
 
@@ -167,6 +167,7 @@ a:hover{
 .title{
     margin: 5px 10px;
     text-align: center;
+    color: #6e6e6e;
 }
 
 .product:hover{
@@ -184,49 +185,14 @@ a:hover{
     object-position: center;
 }
 
-.product a .title{
+a {
     text-decoration: none;
 }
-.overlay {
-    margin: 0;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .3s ease;
-    background-color: rgb(44, 44, 44);
-  }
-
-  .product:hover .overlay{
-      opacity: 0.2;
-  }
 
 
-  .overlay-c {
-    color: white;
-    font-size: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
 
-/* .card-name{
-    padding: 5px;
-    overflow: auto;
-} */
 
-/* .card-name p{
-    display: inline-block;
-} */
 
 
 .design{
@@ -242,19 +208,6 @@ a:hover{
 }
 
 
-.like{
-    display: inline-block;
-    /* border: solid red 1px; */
-}
-
-.like button{
-    /* background-color: rgb(126, 126, 126); */
-    color: rgb(155, 155, 155);
-    border: none;
-    border-radius: 10px;
-    float: right;
-    font-size: 20px;
-}
 
  
 
@@ -347,6 +300,29 @@ a:hover{
       max-height: 4.5cm;
       height: auto;
       box-shadow: 0px 3px 5px 1px rgba(46, 46, 46, 0.5);
+  }
+
+
+  .order-form-container {
+      border-radius: 20px;
+      width: 60%;
+      /* padding: 10px; */
+      margin: 30px auto;
+      box-shadow: 0px 3px 5px 1px rgba(46, 46, 46, 0.5);
+  }
+
+  .order-head {
+      background-color: #6e6e6e;
+      color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 15px 7%;
+      font-size: x-large;
+      font-weight: lighter;
+  }
+
+  .order-form{
+      padding: 15px 7%;
   }
 
   @media (max-width: 900px) {

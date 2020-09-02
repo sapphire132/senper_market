@@ -4,10 +4,15 @@
 
     <nav class="Mainnav row">
 
-        <div class="brand col-3">
-            <img class="logo" src="{% static 'img/logo.png' %}" alt="">
-             <p> Sapphire </p>
-        </div>
+        
+            <div class="brand col-3">
+                <a href=" {% url 'index' %} ">
+                    <img class="logo" src="{% static 'img/logo.png' %}" alt="">
+                </a> 
+                <!-- <p> Sapphire </p> -->
+            </div>
+        
+        
 
          <!-- types -->
         <div class="types-box col-6">
@@ -28,7 +33,7 @@
         </div>
 
         <div class="order col-3">
-            <button class="order-btn ">ORDER</button>
+            <a href=" {% url 'order' %} " class="order-btn ">ORDER</a>
         </div>
       
     </nav>
