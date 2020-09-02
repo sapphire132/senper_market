@@ -132,3 +132,10 @@ STATICFILES_DIRS = (
 # media folder settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# email setup
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'gemg2019@gmail.com'
+EMAIL_HOST_PASSWORD = '#pass@gmemg2019'
+EMAIL_USE_TSL = True
