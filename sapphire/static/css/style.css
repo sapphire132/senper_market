@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .Mainnav{
     color: rgb(138, 136, 136);
     padding: 15px 50px;
