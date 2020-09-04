@@ -20,8 +20,6 @@ def index(request):
 def about(request):
     return render(request, 'pages/about.html')
 
-def tutorial(request):
-    return render(request, 'pages/tutorial.html')
 
 def item(request, item_id):
     item = get_object_or_404(Design, pk=item_id)

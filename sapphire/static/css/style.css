@@ -138,6 +138,19 @@ a:hover{
 
 /* end log in */
 
+.top{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.top h1{
+    font-weight: 250;
+}
+
+.top h4 {
+    font-weight: lighter;
+}
+
 .horz{
     width: 80%;
     /* border: solid #6e6e6e 1px; */
@@ -347,12 +360,26 @@ a {
       border: solid #464646 2px;
   }
 
-  .tutorial{
-      margin: 50px 7%;
+
+  .tutorials {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 50px 5%;
   }
 
-  iframe{
-    margin: 50px 7%;
+  .tutorial-main{
+    flex: content; 
+  }
+
+  .tutorials-side{
+      flex: 22%;
+      display: flex;
+      flex-flow: column;
+      margin: 0px 40px;
+  }
+
+  .tutorials-side iframe{
+
   }
 
   @media (max-width: 900px) {
