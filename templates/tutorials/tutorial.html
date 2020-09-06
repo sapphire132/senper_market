@@ -13,6 +13,8 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
             </iframe>
+
+            <h3> {{ tutorial.course_name }} </h3>
         </div>
         {% endif %}
         <div class="tutorials-side">
@@ -20,14 +22,10 @@
             {% if Tutorials %}
                 {% for tutorial in Tutorials %}
                  <a href=" {% url 'tutorial' tutorial.id %} ">
-                    <iframe 
-                    width="4cm" 
-                    height="auto"
-                    src="{{ tutorial.course }}" 
-                    frameborder="0" 
-                    allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                    </iframe>
+                    <div class="thumbnail">
+                        <img src="{{ tutorial.thumbnail.url }}" alt=" thumbnail ">
+                        <p> {{ tutorial.course_name }} </p>
+                    </div>
                  </a>
                     
                     <!-- <h5>{{ Tutorial.course_name }}</h5> -->
