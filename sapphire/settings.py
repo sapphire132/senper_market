@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'f#ljnap5p+rdt4sf3gw8y06hs35-%utg@@p2(@=dxfuo-w9py='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['senper.herokuapp.com','127.0.0.1']
 
