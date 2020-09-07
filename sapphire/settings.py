@@ -79,12 +79,11 @@ WSGI_APPLICATION = 'sapphire.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sapphire',
-        'USER': 'postgres',
-        'PASSWORD': '123456789',
-        'HOST': 'localhost'
+        'NAME': 'dc7m5umf4kurvq',
+        'USER': 'gihbgislwkxsfd',
+        'PASSWORD': '4cf4562435de3f54d59d27ea563c8c0b16851dadd5be033ab49be6dce55e2451',
+        'HOST': 'ec2-23-20-168-40.compute-1.amazonaws.com'
     }
-
 }
 
 
