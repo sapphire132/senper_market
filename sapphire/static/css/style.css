@@ -11,6 +11,7 @@ a{
 .Mainnav{
     color: rgb(138, 136, 136);
     padding: 15px 50px;
+    display: flex;
     /* height: 30px; */
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.20);
     /* border: solid red 1px; */
@@ -18,9 +19,17 @@ a{
 
 .brand{
     float: left;
-    
+    flex: 80%;
     /* border: solid red 1px; */
 }
+
+.order{
+    flex: 20%;
+    justify-items: right;
+    /* border: solid red 1px; */
+   
+}
+
 
 .brand p{
     display: inline;
@@ -29,7 +38,7 @@ a{
 }
 
 .logo{
-    width: 30px;
+    width: 40px;
     margin-right: 15px;
 }
 
@@ -49,12 +58,6 @@ a{
 }
 
 
-.order{
-    
-    /* border: solid red 1px; */
-    display: block;
-   
-}
 
 .order-btn{
     margin: 0px;
@@ -123,28 +126,22 @@ a{
 
 
 .btn-auth {
-    padding: 5px 20px;
-    background-color: #797979;
-    color: white;
-    border: none;
+    padding: 5px 25px;
+    background: transparent;
+    color: #797979;
+    border: solid #6e6e6e 2px;
     border-radius: 5px;
-    margin: 15px 5px;
+    margin: 5px 5px;
     border: solid #6e6e6e 2px;
 }
 
 .btn-auth:hover {
-	background: transparent;
-    color: #6e6e6e;
+	background-color: #6e6e6e;
     border: solid #6e6e6e 2px;
+    color: white;
 }
 
-a{
-	color: #474747;
-}
 
-a:hover{
-	color: white;
-}
 
 .forgot-password{
 	margin: 0px;
