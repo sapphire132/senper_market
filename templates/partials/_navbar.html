@@ -2,20 +2,36 @@
 
     <!-- nav -->
 
-    <nav class="Mainnav row">
+    <nav class="Mainnav">
 
         
-            <div class="brand col-3">
+            <div class="brand">
                 <a href=" {% url 'index' %} ">
                     <img class="logo" src="{% static 'img/logo.png' %}" alt="">
                 </a> 
                 <!-- <p> Sapphire </p> -->
             </div>
+
+            <div class="order ">
+
+                <a href="{% url 'order' %}">
+                    <button class="btn-auth"  >
+                        Order
+                    </button>
+                </a>
+
+                <a href="{% url 'about' %}">
+                    <button class="btn-auth"  >
+                        About Us
+                    </button>
+                </a>
+              
+            </div>
         
         
 
          <!-- types -->
-        <div class="types-box col-6">
+        <!-- <div class="types-box col-6">
             <ul class="types">
                 <li>
                     <a href=" {% url 'tutorials' %} ">
@@ -32,11 +48,9 @@
                     others
                 </li>
             </ul>
-        </div>
+        </div> -->
 
-        <div class="order col-3">
-            <a href=" {% url 'order' %} " class="order-btn ">ORDER</a>
-        </div>
+        
       
     </nav>
 
