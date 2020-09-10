@@ -21,17 +21,17 @@ def ordered(request):
 
         order.save()
 
-        send_mail(
-            'New order Senper Graphics',
-            'Dear senper graphics admin, there has been new order made through your website. log in to the admin dashboard for detail. good bye!',
-            'geme8611@gmail.com',
-            [
-                'gemg2019@gmail.com',
-                'joyigirma@gmail.com'
-            ],
-            fail_silently=False
+        # send_mail(
+        #     'New order Senper Graphics',
+        #     'Dear senper graphics admin, there has been new order made through your website. log in to the admin dashboard for detail. good bye!',
+        #     'geme8611@gmail.com',
+        #     [
+        #         'gemg2019@gmail.com',
+        #         'joyigirma@gmail.com'
+        #     ],
+        #     fail_silently=False
 
-        )
+        # )
 
         messages.success( request, 'your order has been taken! we will get back to you very soon!')
     
