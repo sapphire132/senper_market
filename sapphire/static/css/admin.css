@@ -1,0 +1,40 @@
+#header{
+    background: rgb(245, 245, 245);
+    color: #464646;
+}
+
+#branding h1{
+    color: teal;
+}
+
+#header a:link, 
+#header a:visited{
+    color: rgb(43, 43, 43);
+}
+
+#user-tools a{
+    color: #464646;
+}
+
+#main{
+    margin-top: 15px;
+}
+
+div.breadcrumbs{
+    background: #818181;
+}
+
+
+.toggle-nav-sidebar {
+    border: none;
+    background: #818181;
+    color: white;
+}
+
+.module h2, .module caption, .inline-group h2{
+    background: #818181;
+}
+
+a:link, a:visited{
+    color: #818181;
+}
