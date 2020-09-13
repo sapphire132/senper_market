@@ -38,3 +38,7 @@ div.breadcrumbs{
 a:link, a:visited{
     color: #818181;
 }
+
+.button.default, input[type=submit].default, .submit-row input.default{
+    color: #818181;
+}

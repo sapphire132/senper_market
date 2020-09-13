@@ -33,12 +33,12 @@ a{
 
 .brand p{
     display: inline;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
 }
 
 .logo{
-    width: 40px;
+    width: 35px;
     margin-right: 15px;
 }
 
@@ -124,13 +124,31 @@ a{
 	border-color: #474747;
 }
 
+.nav-btn-order{
+    padding: 2px 25px;
+    background: #717171;
+    color: #fff;
+    border: solid #717171 2px;
+    border-radius: 20px;
+    margin: 5px 5px;
+}
 
-.btn-auth {
-    padding: 5px 25px;
+.nav-btn-about{
+    padding: 2px 25px;
     background: transparent;
     color: #797979;
-    border: solid #6e6e6e 2px;
-    border-radius: 5px;
+    border: solid #6e6e6e 1px;
+    border-radius: 20px;
+    margin: 5px 5px;
+}
+
+
+.btn-auth {
+    padding: 2px 25px;
+    background: transparent;
+    color: #797979;
+    border: solid black 2px;
+    border-radius: 20px;
     margin: 5px 5px;
     border: solid #6e6e6e 2px;
 }
