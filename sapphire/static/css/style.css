@@ -12,9 +12,7 @@ a{
     color: rgb(138, 136, 136);
     padding: 15px 50px;
     display: flex;
-    /* height: 30px; */
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.20);
-    /* border: solid red 1px; */
 }
 
 .brand{
