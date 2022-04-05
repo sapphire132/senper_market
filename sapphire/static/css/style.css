@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
 }
 
 a{
@@ -520,6 +521,10 @@ a {
 
   /* about end */
 
+
+  .messages{
+      margin: auto;
+  }
 
 
   @media (max-width: 900px) {

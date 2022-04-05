@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+ {% load static%}
+{% block content %}
+
+<div class="designer-page">
+  <div class="designer-profile">
+    <img src="{{ Designer.profile.url }}" alt="pr">
+  </div>
+
+  <div class="designer-details">
+    <h2> {{ Designer.name }} </h2>
+    <!-- <p> {{ Designer.username }} </p> -->
+
+    <p> {{ Designer.bio }} | Working at {{ Designer.work_at }} </p>
+    <p>  </p>
+
+    <div class="skills">
+      {% if Designer.skill_1 %}
+         <p class="skill"> {{ Designer.skill_1 }} </p>
+      {% endif %}
+
+      {% if Designer.skill_2 %}
+         <p class="skill"> {{ Designer.skill_2 }} </p>
+      {% endif %}
+
+      {% if Designer.skill_3 %}
+         <p class="skill"> {{ Designer.skill_3 }} </p>
+      {% endif %}
+
+      {% if Designer.skill_4 %}
+         <p class="skill"> {{ Designer.skill_4 }} </p>
+      {% endif %}
+
+      {% if Designer.skill_5 %}
+         <p class="skill"> {{ Designer.skill_5 }} </p>
+      {% endif %}
+        
+    </div>
+
+    <div class="designer-about">
+      {{ Designer.about_you }}
+    </div>
+
+    <div class="designer-social-media">
+      {% if Designer.facebook %}
+          <a href="#">
+              <p class="fa fa-mail">a</p>
+          </a>
+      {% endif %}
+        </div>
+   
+
+  </div>
+</div>
+
+
+<hr class="horz">
+
+
+<!-- products -->
+<div class="product-box">
+
+    {% if Designs %}
+        {% for design in Designs %}
+           
+                <div class="product">
+                  <a href="{% url 'item' design.id %}">
+                    <img
+                    src="{{ design.photo_main.url }}"
+                    class="product-img" alt="...">
+                    
+                  </a>
+                  
+                  <div class="title">
+                    <p> {{design.client}} </p>
+                  </div>
+                </div>
+            
+        {% endfor %}
+
+    {% else %}
+            <h1>No Design Available</h1>
+    {% endif %}     
+  </div>
+
+
+{% endblock %}

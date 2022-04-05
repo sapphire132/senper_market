@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'f#ljnap5p+rdt4sf3gw8y06hs35-%utg@@p2(@=dxfuo-w9py='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['senper.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -50,7 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'sapphire.urls'
@@ -80,10 +79,11 @@ WSGI_APPLICATION = 'sapphire.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dc7m5umf4kurvq',
-        'USER': 'gihbgislwkxsfd',
-        'PASSWORD': '4cf4562435de3f54d59d27ea563c8c0b16851dadd5be033ab49be6dce55e2451',
-        'HOST': 'ec2-23-20-168-40.compute-1.amazonaws.com'
+        'NAME': 'senperdb',
+        'USER': 'mainuser',
+        'PASSWORD': '#pass@db',
+        'HOST': 'localhost',
+        'PORT': ''
     }
 }
 
@@ -133,6 +133,13 @@ STATICFILES_DIRS = (
 # media folder settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+# EMAIL_HOST = smtp.gmail.com
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'gemg2019@gmail.com'
+# EMAIL_HOST_PASSWORD = '#pass@gemg2019'
 
 
 

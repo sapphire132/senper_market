@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.core.mail import send_mail
+from django.conf import settings
 from .models import Order 
 
 
@@ -24,16 +25,17 @@ def ordered(request):
         # send_mail(
         #     'New order Senper Graphics',
         #     'Dear senper graphics admin, there has been new order made through your website. log in to the admin dashboard for detail. good bye!',
-        #     'geme8611@gmail.com',
+        #     'gemg2019@gmail.com',
         #     [
-        #         'gemg2019@gmail.com',
-        #         'joyigirma@gmail.com'
+        #         'geme8611@gmail.com,
+            #    'gemechu@gebeya.training'
         #     ],
         #     fail_silently=False
 
         # )
 
-        messages.success( request, 'your order has been taken! we will get back to you very soon!')
+        messages.success(request, 'Profile details updated.')
+        # messages.success( request, 'your order has been taken! we will get back to you very soon!')
     
         return redirect('index')
 

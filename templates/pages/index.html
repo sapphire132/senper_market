@@ -34,13 +34,13 @@
 
 <hr class="horz">
 
-    {% if messages %}
-    <ul class="messages">
-        {% for message in messages %}
-        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
 
       <!-- products -->
       <div class="product-box">
@@ -49,7 +49,7 @@
             {% for design in Designs %}
                
                     <div class="product">
-                      <a href="{% url 'item' design.id %}">
+                      <a href="{% url 'item' design.client %}">
                         <img
                         src="{{ design.photo_main.url }}"
                         class="product-img" alt="...">

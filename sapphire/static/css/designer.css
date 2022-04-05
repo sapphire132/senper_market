@@ -1,0 +1,63 @@
+.designer-page{
+    /* border: solid red 1px; */
+    width: 85%;
+    margin: 50px auto ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.designer-profile{
+    margin-left: 3rem;
+}
+
+.designer-profile img{
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    width: 4cm;
+    height: 4cm;
+}
+
+.designer-details{
+    margin-left: 2rem;
+}
+
+.designer-details h2{
+    font-weight: lighter;
+}
+
+.designer-about{
+    width: 50rem;
+    font-weight: 350;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.skill{
+    background: #aaaaaa;
+    border-radius: 25px;
+    margin-right: 20px;
+    padding: 2px 20px;
+}
+
+.horz{
+    height: 2px;
+    border-color: #464646;
+}
+
+.designer-social-media{
+
+}
+
+.designer-social-media p{
+    width: 2.5rem;
+    height: 2.5rem;
+    /* padding: 10px; */
+    border-radius: 50%;
+    color: #fff;
+    background-color: #464646;
+}

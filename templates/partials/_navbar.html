@@ -1,19 +1,17 @@
 {% load static %}
 
     <!-- nav -->
-
-    <nav class="Mainnav">
-
+    <header>
+        <!-- logo -->
+        <div class="brand">
+            <a href=" {% url 'index' %} ">
+                <img class="logo" src="{% static 'img/logo.png' %}" alt="">
+            </a> 
+            <p> <b>Senper</b> Graphics </p>
+        </div>
         
-            <div class="brand">
-                <a href=" {% url 'index' %} ">
-                    <img class="logo" src="{% static 'img/logo.png' %}" alt="">
-                </a> 
-                <p> <b>Senper</b> Graphics </p>
-            </div>
-
+        <nav class="Mainnav">
             <div class="order ">
-
                 <a href="{% url 'order' %}">
                     <button class="nav-btn-order"  >
                         Order
@@ -25,33 +23,11 @@
                         About Us
                     </button>
                 </a>
-              
             </div>
-        
-        
+        </nav>
 
-         <!-- types -->
-        <!-- <div class="types-box col-6">
-            <ul class="types">
-                <li>
-                    <a href=" {% url 'tutorials' %} ">
-                        courses
-                    </a>
-                </li>
-                <li>
-                    Tshirt
-                </li>
-                <li>
-                    illustration
-                </li>
-                <li>
-                    others
-                </li>
-            </ul>
-        </div> -->
+    </header>
 
-        
-      
-    </nav>
+  
 
 <!-- end nav -->
